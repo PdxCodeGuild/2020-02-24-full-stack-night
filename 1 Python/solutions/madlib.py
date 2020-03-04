@@ -1,17 +1,16 @@
 from random import choice
 
-
-def choose(a_list):
-  '''
+'''
   chooses a random element from a list, removes the element from the list, then returns the random element
   input: takes in a list from which a random element is chosen
   returns: a random element from the list
   depends on: random.choice
 '''
+def choose(a_list):
   rand_item = choice(a_list)
   a_list.remove(rand_item)
   return rand_item
-
+  
 
 def main():
   user_input = []
