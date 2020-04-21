@@ -5,7 +5,7 @@ def convert_units(data):
         'm': 1,
         'km': 1000,
         'yd': 0.9144,
-        'in': 0.0254
+        'in': 0.0254,
     }
     value, unit_from, unit_to = data
     converted_m = conversion_factors[unit_from] * value
