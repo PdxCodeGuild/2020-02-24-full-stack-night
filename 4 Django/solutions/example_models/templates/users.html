@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>users</title>
+  </head>
+  <body>
+    {% for user in users%}
+    <ul>
+      <li>first name: {{user.first_name}}</li>
+      <li>last name: {{user.last_name}}</li>
+      <li>age: {{user.age}}</li>
+      <li>favorite_pet: {{user.favorite_pet}}</li>
+    </ul>
+    {% empty %}
+    <p>there are no users to display</p>
+    {% endfor %}
+  </body>
+</html>
