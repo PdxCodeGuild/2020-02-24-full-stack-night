@@ -1,0 +1,11 @@
+h1 {
+  color: firebrick;
+}
+
+.container {
+  width: 1000px;
+}
+
+.section {
+  display: inline;
+}
