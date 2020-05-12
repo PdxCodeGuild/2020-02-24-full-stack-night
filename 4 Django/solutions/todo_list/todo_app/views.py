@@ -45,8 +45,9 @@ def update_todo(request, id):
 def remove_todo(request):
   pass
 
-def details_todo(request):
-  pass
+def details_todo(request, id):
+  Todo.objects.get(pk=id)
+  return render(request, 'todo/todo_update.html', context = {'todo': Todo.objects.get(pk=id)})
 
 def remove_todo_all(request):
   pass
