@@ -5,4 +5,5 @@ urlpatterns = [
     path('', include('pages.urls')),
     path('todos/', include('todo_app.urls')),
     path('admin/', admin.site.urls),
+    path('accounts/', include('accounts.urls')),
 ]
